@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/*HEADER*/
+
+.tamLogo {
+    width: 150px;
+}
+
+.fuentesNav {
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.encabezado {
+    background-color: bisque;
+    border-top: solid 20px #e72767;
+    border-bottom: solid 1px #c1101a;
+    margin-bottom: 30px;
+}
+
+nav li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 15px;
+    color: gray;
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+    padding: 0 15px;
+}
+
+a:hover {
+    background-color: #c1101a;
+    color: #fafafa;
+}
+
+/*Galeria img*/
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    max-width: 1200px;
+    padding: 20px;
+    width: 100%;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+/* PRODUCTOS */
+
+.tituloProductos {
+    background-color: #e72767;
+    color: #fafafa;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.tituloProductos h2 {
+    font-size: 35px;
+}
+
+
+/*CARDS*/
+
+
+.colorBtn {
+    background-color: #e2485a;
+    color: #020202;
+    font-size: 18px;
+}
+
+.colorBtn:hover {
+    background-color: rgb(205, 7, 245);
+    color: #fafafa;
+}
+
+/*Cards*/
+/* Card container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+/* Individual card */
+.card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Card image */
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Card content */
+.card-content {
+    padding: 16px;
+    text-align: center;
+}
+
+.card-content h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.5em;
+}
+
+.card-content p {
+    margin: 0;
+    color: #555;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+/* Estilos del formulario de inicio de sesión */
+h1 {
+    text-align: center;
+}
+
+.formulario {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5c7c7de;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #e42929;
+}
+
+.inputMessi {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.btnMios {
+    width: 100%;
+    padding: 10px;
+    background-color: #dc82f3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btnMios:hover {
+    background-color: #ff1f33;
+}
+
+i {
+    font-size: 35px;
+}
+
+/* estilos del perfil*/
+
+.profile-card {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.profile-card p {
+    margin-bottom: 10px;
+}
+
+.profile-card .btnMios {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #c1101a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.profile-card .btnMios:hover {
+    background-color: #ff1f33;
+}
+
+.profile-card a {
+    display: block;
+    margin-bottom: 10px;
+    color: #c1101a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*estilo real time products*/
+
+/* Títulos */
+h1,
+h2,
+h3 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Contenedor de productos */
+#contenedorProductos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+/* Estilos pagina de Productos - Tarjeta de producto */
+
+.card-containerproductos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px; /* Añadir espacio entre tarjetas */
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 16px;
+}
+.card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s;
+}
+
+.card p {
+    margin: 0;
+    padding: 5px;
+}
+
+.card button {
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    background-color: #c1101a;
+    color: #fafafa;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+    background-color: #ff1f33;
+}
+
+/* Formulario */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+    outline: none;
+    border-color: #c1101a;
+}
+
+button#btnEnviar {
+    width: 100%;
+    padding: 10px;
+    background-color: #c1101a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button#btnEnviar:hover {
+    background-color: #ff1f33;
+}
+
+/*pie de pagina*/
+
+.footer {
+    background-color: #e72767;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 5px;
+}
+
+.footer-section h3 {
+    border-bottom: 3px solid #ffffff;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: #ffffff;
+    text-decoration: tan;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}

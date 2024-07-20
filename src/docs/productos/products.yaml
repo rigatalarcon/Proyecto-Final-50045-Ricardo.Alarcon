@@ -1,0 +1,52 @@
+openapi: 3.0.0
+
+info:
+  title: Mis Dulzuras en el Mar.
+  version: 1.0.0
+paths:
+  /products:
+    get:
+      summary: Obtenemos todos los productos de la BD
+      tags:
+        - products
+      responses:
+        "200":
+          description: Obtienen todos los productos correctamente
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/product"
+        "500":
+          description: Error interno del servidor
+components:
+  schemas:
+    product:
+      type: object
+      properties:
+        _id:
+          type: string
+          description: Id autogenerado por MongoDB
+        title:
+          type: string
+          description: descripción del producto
+        description:
+          type: string
+          description: descripción del producto
+        price:
+          type: number
+          description: precio del producto
+        code:
+          type: string
+          description: código del producto
+        stock:
+          type: number
+          description: cantidad del producto        
+      example:
+        _id: ObjectId('123456')
+        title: Torta Brownie Frutas
+        description: torta
+        price: 210
+        code: aaa124
+        stock: 45
